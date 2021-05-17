@@ -1,0 +1,258 @@
+body {
+    margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.125rem ;
+    font-weight: 300;
+    color: #474b4f;
+}
+
+img {
+    max-width: 100%;
+}
+
+svg {
+    display: none;
+}
+
+.home-btn {
+    display: none;
+}
+
+aside {
+    display: none;
+}
+
+
+/*  ==================
+    Typography
+    ==================*/
+
+
+h1,
+h2,
+h3 {
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    color: black;
+    margin-top: 0;
+}
+
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 0.3rem;
+    line-height: 1rem;
+    margin-bottom: 0.2em;
+    font-weight: 500;
+}
+
+
+p {
+    line-height: 2rem;
+    margin-bottom: 2em;
+}
+
+.first-article {
+    font-weight: 500;
+}
+
+
+.article-title {
+    font-size: 1.5rem;
+}
+
+.article-read-more,
+.article-info {
+    display: none;
+}
+
+/*  ==================
+    Layout 
+    ==================*/
+
+.container {
+    width: 90%;
+    max-width: 210mm;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+}
+
+
+header,
+footer {
+    display: none;
+}
+
+main,
+aside {
+    margin-top: 1em;
+}
+
+main {
+    width: 65%;
+}
+
+aside {
+    width: 30%;
+    margin-left: 1em;
+}
+
+.container-flex {
+    flex-direction: row;
+}
+
+
+            /* table */
+
+
+table, th, td {
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 0.5em 2em;
+    text-align: left;
+    line-height: 2rem;
+}
+
+table {
+    box-shadow: 0 0px 40px 0px rgb(0 0 0 / 30%);
+    margin-bottom: 6em;
+    border-radius: 15px;
+}
+
+th {
+    color: White;
+    letter-spacing: 0.1rem;
+    background-color: var(--red);
+}
+
+th:first-child {
+    border-top-left-radius: 15px;
+}
+
+th:last-child {
+    border-top-right-radius: 15px;
+}
+
+
+.table-even-element {
+    background-color: #ebebeb;
+}
+
+/* articles */
+
+.article-featured {
+    border-bottom: 1px solid #474b4f;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+
+.article-recent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.article-recent-main {
+    order: 2;
+}
+
+.article-recent-secondary {
+    order: 1;
+}
+
+.article-recent {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.article-recent-main {
+    width: 66%;
+}
+
+.article-recent-secondary {
+    width: 30%;
+}
+
+.article-image {
+    width: 100%;
+    min-height: 250px;
+    object-fit: cover;
+}
+
+.article-featured {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-image {
+    order: -2;
+}
+
+.article-info {
+    order: -1;
+}
+
+/* widgets */
+
+.sidebar-widget {
+    border: 1.1rem solid hsl(240, 5%, 80%);
+    padding: 1em;
+}
+
+.widget-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+}
+
+.widget-recent-post {
+    font-size: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #474b4f;
+    margin-bottom: 1.5em;
+}
+
+.widget-image {
+    order: 1;
+    margin-bottom: 1.125em;
+}
+
+.widget-recent-post-title {
+    font-family: 'Lora', serif;
+    letter-spacing: 0px;
+    order: 2;
+}
+
+.widget-recent-post:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+/*
+    form
+            */
+
+
+.form {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-element {
+    margin-bottom: 1rem;
+}
+
+input:focus {
+    border: none;
+}
